@@ -1,0 +1,116 @@
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mudas do Agreste</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mudas do Agreste">
+    <!-- Importando CSS -->
+    <link rel="stylesheet" href="./static/css/styles.css">
+    <!-- Importando a fonte Ubuntu -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap" rel="stylesheet">
+    <!-- Carregando a biblioteca JavaScript TypeIt -->
+    <script crossorigin="anonymous" src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js" defer=""></script>
+  </head>
+  <body>
+    <div>
+      <header class="header">
+        <button class="button" onclick="nav_bar()">
+          <img src="./static/img/menu.svg" alt="Logo do menu" class="button-img" width="30" height="34">
+        </button>
+        <nav id="nav-bar" class="nav-bar">
+          <ul class="nav-ul">
+            <li class="nav-li"><a class="nav-a" href="#sobre">01: Sobre</a></li>
+            <li class="nav-li"><a class="nav-a" href="#produtos">02: Produtos</a></li>
+            <li class="nav-li"><a class="nav-a" href="#contatos">03: Contatos</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section id="sobre" class="sobre">
+          <div class="sobre-div">
+            Olá, nós somos <br>
+            <span class="sobre-span"></span>
+          </div>
+        </section>
+        <section id="produtos" class="produtos">
+          <h2 class="produtos-h2">Produtos disponíveis</h2>
+          <div class="produtos-div1">
+            <div class="produtos-div2">
+              <img src="./static/img/muda1.png" alt="Muda de ipê-amarelo" class="produtos-img">
+              <div class="produtos-div3">
+                <h4 class="produtos-h4">IPÊ-AMARELO<br>Preço: R$ 35,00 p/ muda.</h4>
+                <p class="produtos-p">
+                  O ipê-amarelo, conhecido também como Craibeira em Alagoas, é uma árvore nativa
+                  brasileira que floresce com flores amarelas vibrantes e é considerada o símbolo
+                  do estado. É uma árvore caducifólia, ou seja, perde as folhas em algumas estações,
+                  e suas flores douradas são muito apreciadas por sua beleza. Além de sua beleza
+                  ornamental, o ipê-amarelo tem diversas outras aplicações, como em paisagismo urbano
+                  e como recurso medicinal.
+                </p>
+              </div>
+            </div>
+            <div class="produtos-div2">
+              <img src="./static/img/muda2.png" alt="Muda de jatobá" class="produtos-img">
+              <div class="produtos-div3">
+                <h4 class="produtos-h4">JATOBÁ<br>Preço: R$ 20,00 p/ muda.</h4>
+                <p class="produtos-p">
+                  A árvore Jatobá, cientificamente conhecida como Hymenaea courbaril,
+                  é uma árvore nativa do Brasil, com grande importância ecológica e
+                  econômica. Ela pode atingir até 40 metros de altura e possui um tronco
+                  reto e cilíndrico. A madeira do Jatobá é resistente, durável e usada
+                  em diversas aplicações, como construção civil, móveis e objetos de arte.
+                </p>
+              </div>
+            </div>
+            <div class="produtos-div2">
+              <img src="./static/img/muda3.png" alt="Muda de cajueiro" class="produtos-img">
+              <div class="produtos-div3">
+                <h4 class="produtos-h4">CAJUEIRO<br>Preço: R$ 40,00 p/ muda.</h4>
+                <p class="produtos-p">
+                  O cajueiro é uma árvore tropical de porte médio, que pode atingir até
+                  10 metros de altura, com copa ampla e galhos tortuosos e pendentes.
+                  Possui folhas simples, verdes ou rosadas, dependendo da idade, e flores
+                  pequenas, brancas ou rosadas, com perfume agradável. O fruto verdadeiro
+                  do cajueiro é a castanha, enquanto a parte carnosa, que é popularmente
+                  chamada de fruto, é na verdade um pseudofruto.
+                </p>
+              </div>
+            </div>
+            <div class="produtos-div2">
+              <img src="./static/img/muda4.png" alt="Muda de jenipapo" class="produtos-img">
+              <div class="produtos-div3">
+                <h4 class="produtos-h4">JENIPAPO<br>Preço: R$ 70,00 p/ muda.</h4>
+                <p class="produtos-p">
+                  A árvore jenipapo, também conhecida como jenipapeiro, é uma
+                  espécie nativa das Américas, pertencente à família Rubiaceae.
+                  É uma árvore de porte pequeno a médio, que pode atingir até 14
+                  metros de altura. Possui copa arredondada e tronco geralmente reto,
+                  com casca lisa e verde-acizentada. As folhas são simples, lisas e
+                  de até 35 cm de comprimento, e as flores são amarelas com 5 pétalas.
+                  O fruto é uma baga globosa, de cor amarelo-pardacenta quando madura,
+                  com polpa aromática, suculenta e agridoce, que pode ser utilizada
+                  para diversos fins culinários e medicinais.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contatos" class="contatos">
+          <h2 class="contatos-h2">Entre em contato para fazer sua encomenda</h2>
+          <div class="contatos-div">
+            <a href="https://wa.me/5582998236885?text=Olá, gostaria de fazer uma encomenda!" target="_blank" class="contatos-a">
+              <img src="./static/img/whatsapp.svg" alt="Logo do whatsapp" class="contatos-a-img" width="20" height="20">
+              Fale conosco no WhatsApp!
+            </a>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <p class="footer-p">© Malba Vinicius Lopes Santos 2025</p>
+      </footer>
+    </div>
+  </body>
+  <script src="./static/js/functions.js"></script>
+</html>
