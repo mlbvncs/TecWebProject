@@ -23,7 +23,7 @@
           <ul class="nav-ul">
             <li class="nav-li"><a class="nav-a" href="#sobre">01: Sobre</a></li>
             <li class="nav-li"><a class="nav-a" href="#produtos">02: Produtos</a></li>
-            <li class="nav-li"><a class="nav-a" href="#contatos">03: Contatos</a></li>
+              <li class="nav-li"><a class="nav-a" href="#pedido">03: Pedido</a></li>
           </ul>
         </nav>
       </header>
@@ -97,14 +97,27 @@
             </div>
           </div>
         </section>
-        <section id="contatos" class="contatos">
-          <h2 class="contatos-h2">Entre em contato para fazer sua encomenda</h2>
-          <div class="contatos-div">
-            <a href="https://wa.me/5582998236885?text=Olá, gostaria de fazer uma encomenda!" target="_blank" class="contatos-a">
-              <img src="./static/img/whatsapp.svg" alt="Logo do whatsapp" class="contatos-a-img" width="20" height="20">
-              Fale conosco no WhatsApp!
-            </a>
-          </div>
+        <section id="pedido" class="pedido">
+          <h2 class="pedido-h2">Faça seu pedido e receba em casa</h2>
+          <form id="form" class="pedido-form">
+            <label for="nome" class="pedido-label">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" class="pedido-input">
+            <label for="numero" class="pedido-label">Número:</label>
+            <input type="text" id="numero" name="numero" placeholder="(xx) xxxxx-xxxx" class="pedido-input">
+            <label for="email" class="pedido-label">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Digite seu email" class="pedido-input">
+            <label for="endereco" class="pedido-label">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço" class="pedido-input">
+            <label for="quantidade1" class="pedido-label">Quantidade de mudas de Ipê-Amarelo:</label>
+            <input type="number" id="quantidade1" name="quantidade1" value="0" class="pedido-input">
+            <label for="quantidade2" class="pedido-label">Quantidade de mudas de Jatobá:</label>
+            <input type="number" id="quantidade2" name="quantidade2" value="0" class="pedido-input">
+            <label for="quantidade3" class="pedido-label">Quantidade de mudas de Cajueiro:</label>
+            <input type="number" id="quantidade3" name="quantidade3" value="0" class="pedido-input">
+            <label for="quantidade4" class="pedido-label">Quantidade de mudas de Jenipapo:</label>
+            <input type="number" id="quantidade4" name="quantidade4" value="0" class="pedido-input">
+            <input type="submit" value="Comprar" class="pedido-button">
+          </form>
         </section>
       </main>
       <footer class="footer">
