@@ -3,6 +3,8 @@
   --color2: #556B2F;
   --color3: #ffffff;
   --color4: #000000;
+  --color5: #dadce0;
+  --color6: #f0eae8;
   --family1: "Ubuntu", sans-serif;
   --size1: 120px;
   --size2: 60px;
@@ -127,51 +129,69 @@ body {
   margin: 0;
 }
 
-.contatos {
-  height: 80vh;
+.pedido {
+  min-height: 80vh;
   padding: 0 var(--padding1);
-  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.contatos-h2 {
+.pedido-h2 {
   font-size: var(--size2);
   font-weight: var(--weight2);
   text-align: center;
+  margin-top: var(--margin1);
   margin-bottom: 0;
 }
 
-.contatos-div {
+.pedido-form {
   display: flex;
-  margin-top: var(--margin1);
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--size7);
+  margin: var(--margin1) 0;
 }
 
-.contatos-a {
-  font-size: var(--size4);
-  color: var(--color3);
-  text-decoration: none;
-  position: relative;
-  top: 0;
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
+.pedido-label {
+  font-weight: var(--weight2);
+  width: 100%;
 }
 
-.contatos-a:hover {
-  top: var(--size7);
-  transition: top .3s ease-out;
+.pedido-input {
+  font-size: var(--size6);
+  font-family: var(--family1);
+  font-weight: var(--weight2);
+  border: 0;
+  border-radius: 4px;
+  padding: var(--size6);
+  width: 100%;
 }
 
-.contatos-a-img {
-  width: 25px;
-  height: 25px;
-  display: block;
+.pedido-input:hover, .pedido-input:focus {
+  outline: 2px solid var(--color3);
+  outline-offset: 2px;
 }
 
-.contatos, .footer {
+.pedido-button {
+  font-size: var(--size6);
+  font-family: var(--family1);
+  font-weight: var(--weight1);
+  color: var(--color1);
+  background-color: var(--color3);
+  border: 0;
+  border-radius: 4px;
+  padding: var(--size6);
+  margin-top: var(--size6);
+}
+
+.pedido-button:hover {
+  cursor: pointer;
+  background-color: var(--color6);
+}
+
+.pedido, .footer {
   border-top: 4px solid var(--color3);
 }
 
@@ -227,12 +247,12 @@ body {
     margin-top: 0;
   }
 
-  .contatos-div {
-    column-gap: 50px;
+  .pedido-form {
+    width: 50%;
   }
 
-  .contatos-a {
-    gap: var(--size7);
+  .pedido-label {
+    font-size: var(--size5);
   }
 }
 
@@ -312,28 +332,20 @@ body {
     width: 80%;
   }
 
-  .contatos {
+  .pedido {
     padding: 0 var(--padding4);
   }
 
-  .contatos-h2 {
+  .pedido-h2 {
     font-size: var(--size3);
   }
 
-  .contatos-div {
-    flex-direction: column;
-    align-items: center;
-    row-gap: var(--size7);
+  .pedido-form {
+    width: 70%;
   }
 
-  .contatos-a {
-    font-size: var(--size5);
-    gap: var(--size8);
-  }
-
-  .contatos-a-img {
-    width: var(--size5);
-    height: var(--size5);
+  .pedido-label {
+    font-size: var(--size6);
   }
 
   .footer {
